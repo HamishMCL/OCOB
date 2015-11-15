@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace OCOB;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;

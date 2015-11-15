@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace OCOB\Http\Controllers\Auth;
 
-use App\User;
+use OCOB\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use OCOB\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
