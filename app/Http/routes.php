@@ -12,5 +12,39 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('stats');
 });
+
+
+Route::get('/results', function () {
+    return view('results');
+});
+
+
+
+Route::get('/admin',[
+	'uses' => 'adminController@get_Admin',
+	'as' => 'admin',
+	]);
+
+Route::post('/admin',[
+	'uses' => 'adminController@update_stats',
+	]);
+
+
+Route::get('/individual',[
+	'uses' => 'adminController@get_all_stats',
+	'as' => 'individual',
+	]);
+
+
+
+Route::get('/createNewPlayer',[
+	'uses' => 'adminController@get_New_Player',
+	'as' => 'new_player',
+	]);
+
+
+Route::post('/createNewPlayer',[
+	'uses' => 'adminController@create_new_player',
+	]);

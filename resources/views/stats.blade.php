@@ -1,123 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ocob</title>
+        <title>OCOB - Home</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/ocob.css') }}">
 
-        <style>
-        *{
-            padding: 0px;
-            margin: 0px;
-        }
-
-            html, body {
-                height: 100%;
-                background-color: #EDEDED;
-            }
-            h1, h2, h3, h4 ,h5 ,h6
-            {
-                font-family: 'Lato';
-            }
-        
-            #stats
-            {
-                width: 80%;
-                margin:auto;
-                 height: 100%;
-               
-            }
-            #area
-            {
-               width: 80%;
-                margin:auto;
-                 height: 100%;
-            }
-
-            #most_sixes_container
-            {
-                height: 500px;
-                width: 700px;
-                /*border: 1px solid #D9D9D9;*/
-                display: inline-block;
-            }
-
-            #most_runs_container
-            {
-                height: 100%;
-                width: 700px;
-              
-                display: inline-block;
-                float: right;
-            }
-            .most_sixes
-            {
-                width: 100%;
-                height: 50px;
-                background-color: white;
-                border: 1pt solid #E3E3E3;
-            }
-
-            .number_one
-            {
-                background-color: #;
-            }
-            nav
-            {
-                width: 100%;
-                height: 60px;
-                background-color: white;
-                border-bottom: 1px solid #E3E3E3;
-                position: fixed;
-            }
-            span
-            {
-                font-size: 20px;
-                font-family: 'Josefin Sans';
-
-            }
-            td{
-                padding: 20px;
-            }
-            ul
-            {
-                list-style-type: none;
-                display: inline;
-                float: right;
-                padding: 20px;
-            }
-            li {
-                display: inline;
-                margin-right: 10px;
-            }
-            #but{
-               width: 50px;
-               height: 50px;
-               background-color: grey;
-               display: inline;
-            }
-            a{
-                text-decoration: none;
-                color: black;
-                font-family: "Josefin Sans";
-
-            }
-            a:hover
-            {
-                text-decoration: underline;
-            }
-
-        </style>
     </head>
     <body>
         <nav>
             <div id="area">
                 <h1 style="display:inline-block; padding: 15px"><a href="">Otaki College Old boys 2015-2016</a></h1>
             <ul>
-                <li> <a href="">Results</a></li>
-                <li> <a href="">Individual Stats</a> </li>
+                <li> <a href="/results">Results</a></li>
+                <li> <a href="/individual">Individual Stats</a> </li>
             </ul>
             </div>
         
@@ -127,7 +25,7 @@
         <div id="stats">
             <h1>Otaki College Old boys 2015-2016</h1>
               
-         <h1 style="font-size: 50px; margin-bottom: 30px;margin-top: 30px;;">Stats</h1>
+         <h1 style="font-size: 50px; margin-bottom: 30px;margin-top: 30px; font-family: 'Josefin Sans';">Stats</h1>
     <!--======================
     |
     | Most Sixes

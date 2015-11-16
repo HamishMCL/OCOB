@@ -1,0 +1,108 @@
+     *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+            html, body {
+                height: 100%;
+                background-color: #EDEDED;
+            }
+            h1,h2,input,select
+            {
+                font-family: 'Josefin Sans';
+            }
+            td{
+                font-family: 'Josefin Sans';
+            }
+        
+            #stats
+            {
+                width: 80%;
+                margin:auto;
+                 height: 100%;
+               
+            }
+            #area
+            {
+               width: 80%;
+                margin:auto;
+                 height: 100%;
+            }
+
+            #most_sixes_container
+            {
+                height: 500px;
+                width: 700px;
+                /*border: 1px solid #D9D9D9;*/
+                display: inline-block;
+            }
+
+            #most_runs_container
+            {
+                height: 100%;
+                width: 700px;
+              
+                display: inline-block;
+                float: right;
+            }
+            .most_sixes
+            {
+                width: 100%;
+                height: 50px;
+                background-color: white;
+                border: 1pt solid #E3E3E3;
+            }
+
+            .most_sixes:hover
+            {
+                background-color: #DCDCDC;
+            }
+
+            .number_one
+            {
+                background-color: #;
+            }
+            nav
+            {
+                width: 100%;
+                height: 60px;
+                background-color: white;
+                border-bottom: 1px solid #E3E3E3;
+                position: fixed;
+            }
+            span
+            {
+                font-size: 20px;
+                font-family: 'Josefin Sans';
+
+            }
+            td{
+                padding: 20px;
+            }
+            ul
+            {
+                list-style-type: none;
+                display: inline;
+                float: right;
+                padding: 20px;
+            }
+            li {
+                display: inline;
+                margin-right: 10px;
+            }
+            #but{
+               width: 50px;
+               height: 50px;
+               background-color: grey;
+               display: inline;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-family: "Josefin Sans";
+
+            }
+            a:hover
+            {
+                text-decoration: underline;
+            }
