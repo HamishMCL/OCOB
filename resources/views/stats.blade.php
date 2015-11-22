@@ -33,31 +33,31 @@
                     <tr class="most_sixes number_one">
                     <td > <span >1</span></td>
                     <td  > <h2>{{$sixes[0]->player}}</h2></td>
-                    <td style="width: 35px;"> <h4>{{$sixes[0]->sixs}}</h4><h5>6's</h5></td>
+                    <td style="width: 35px;"> <h4>{{$sixes[0]->sixs}}</h4><h5>sixes</h5></td>
                     
                  </tr>
                 <tr class="most_sixes ">
                     <td > <span>2</span></td>
                     <td  > <h2>{{$sixes[1]->player}} </h2></td>
-                    <td > <h4>{{$sixes[1]->sixs}}</h4><h5>6's</h5></td>
+                    <td > <h4>{{$sixes[1]->sixs}}</h4><h5>sixes</h5></td>
                   
                  </tr>
                 <tr class="most_sixes border">
                     <td > <span>3</span></td>
                     <td  > <h2>{{$sixes[2]->player}}</h2></td>
-                    <td> <h4>{{$sixes[2]->sixs}}</h4><h5>6's</h5></td>
+                    <td> <h4>{{$sixes[2]->sixs}}</h4><h5>sixes</h5></td>
                  
                  </tr>
                 <tr class="most_sixes border">
                     <td > <span>4</span></td>
                     <td  > <h2>{{$sixes[3]->player}}</h2></td>
-                    <td> <h4>{{$sixes[3]->sixs}}</h4><h5>6's</h5></td>
+                    <td> <h4>{{$sixes[3]->sixs}}</h4><h5>sixes</h5></td>
                   
                  </tr>
                  <tr class="most_sixes border">
                     <td > <span>5</span></td>
                     <td  > <h2>{{$sixes[4]->player}}</h2></td>
-                    <td> <h4>{{$sixes[4]->sixs}}</h4><h5>6's</h5></td>
+                    <td> <h4>{{$sixes[4]->sixs}}</h4><h5>sixes</h5></td>
                     
                  </tr>      
        

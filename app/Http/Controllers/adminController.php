@@ -26,7 +26,9 @@ class adminController extends Controller
 
     public function get_bowling()
     {
-        return view('admin.bowling');
+        $players = ocob_Batting::all();
+
+        return view('admin.bowling',compact('players'));
     }
 
 

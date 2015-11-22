@@ -26,13 +26,11 @@
    		<form   method="POST" action="/bowling">
 	   		<h2>Player</h2>
 	   		<select name="id">
-				  <option value="hamish">Hamish</option>
-				  <option value="john">John</option>
-				  <option value="marcus">Marcus</option>
-				  <option value="ralph">Ralph</option>
-           <option value="rob">Rob</option>
-            <option value="mike">Mike</option>
-             <option value="reon">Reon</option>
+          <option></option>
+				    @foreach($players as $player)
+            <option value="{{$player->player}}">{{$player->player}}</option>
+
+          @endforeach
           
 
 			</select>
