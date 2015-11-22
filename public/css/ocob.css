@@ -27,7 +27,7 @@
             }
             #area
             {
-               width: 80%;
+               width: 100%;
                 margin:auto;
                  height: 100%;
             }
@@ -112,7 +112,19 @@
             td{
                 text-align: center;
             }
+            table
+            {
+                margin-bottom: 50px;
+            }
 
+            .float-right
+            {
+                float: right;
+            }
+            .float-left
+            {
+                float:;
+            }
             .result
             {
                 display: block;
@@ -122,5 +134,13 @@
                 height: 250px;
                 border: 1px solid black;
             }
+ @media screen and (max-width: 1300px) {
+    
+            #most_sixes_container
+            {
+               display: block;
+            }
 
-       
+
+    
+}

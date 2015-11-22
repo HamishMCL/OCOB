@@ -26,9 +26,9 @@
     |
     |
    ============================== -->
-         <div id="most_sixes_container">
+        <div id="most_sixes_container">
           <h2 style="font-family: 'Archivo Black">Most Sixes</h2>
-          <table cellspacing="0" style="width: 90%; border-collapse: collapse;">
+          <table cellspacing="0" style=" width: 100%; border-collapse: collapse;">
             <tbody >
                     <tr class="most_sixes number_one">
                     <td > <span >1</span></td>
@@ -65,7 +65,7 @@
        
              </tbody>
          </table>     
-         </div>
+    </div>
      <!--=======================
     |
     | Most Runs
@@ -74,14 +74,14 @@
     |
     -->
 
-                  <div id="most_sixes_container" style="float: right;">
+                 <div id="most_sixes_container">
           <h2 style="font-family: 'Archivo Black">Most Runs</h2>
 
-          <table cellspacing="0" style="width: 90%; border-collapse: collapse;">
+          <table cellspacing="0" style="width: 100%; border-collapse: collapse;">
             <tbody >
                  <tr class="most_sixes number_one">
                     <td > <span >1</span></td>
-                    <td  > <h2>{{$runs[0]->player}}</h2></td>
+                    <td  style="text-align:center;"> <h2 >{{$runs[0]->player}}</h2></td>
                     <td style="width: 35px;"> <h4 >{{$runs[0]->runs}}</h4><h5>Runs</h5></td>
                     
                  </tr>
@@ -112,7 +112,7 @@
        
              </tbody>
          </table>     
-         </div>
+      </div>
       <!--
     |
     | Most Wickets
@@ -121,9 +121,9 @@
     |
     -->
 
-        <div id="most_sixes_container" style="float: left;">
+       <div id="most_sixes_container">
           <h2 style="font-family: 'Archivo Black">Most Wickets</h2>
-          <table cellspacing="0" style="width: 90%; border-collapse: collapse;">
+          <table cellspacing="0" style="width: 100%; border-collapse: collapse;">
             <tbody >
                  <tr class="most_sixes number_one">
                     <td > <span >1</span></td>
@@ -158,8 +158,8 @@
        
              </tbody>
          </table>     
-         </div>
-
+    
+  </div>
                <!--
     |
     | Highest Average
@@ -167,10 +167,9 @@
     |
     |
     -->
-
-        <div id="most_sixes_container" style="float: right;">
+ <div id="most_sixes_container">
           <h2 style="font-family: 'Archivo Black">Highest Average</h2>
-          <table cellspacing="0" style="width: 90%; border-collapse: collapse;">
+          <table cellspacing="0" style="width: 100%; border-collapse: collapse;">
             <tbody >
                  <tr class="most_sixes number_one">
                     <td > <span >1</span></td>
@@ -205,8 +204,8 @@
        
              </tbody>
          </table>     
-         </div>
-
+        
+  </div>
 
                <!--
     |
@@ -216,7 +215,7 @@
     |
     -->
 
-        <div id="most_sixes_container" style="float: left;">
+        <div id="most_sixes_container">
           <h2 style="font-family: 'Archivo Black">Highest Score</h2>
           <table cellspacing="0" style="width: 90%; border-collapse: collapse;">
             <tbody >
@@ -253,6 +252,6 @@
        
              </tbody>
          </table>     
-         </div>
+        </div>
 
 @stop

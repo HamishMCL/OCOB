@@ -16,13 +16,13 @@
 
 
 @section('content')
-            <div id="area">
+            <div id="stats">
           <h1 style="margin-bottom: 30px;">Otaki College Old boys 2015-2016</h1>
           <h3>Batting</h3>
          <table cellspacing="0" style="width: 100%; border-collapse: collapse;margin-top: 20px; margin-bottom: 20px;">
             <tbody >
-                 <tr class="most_sixes number_one" style="height:20px;">
-                    <td >Player</td>
+                 <tr class="most_sixes number_one" >
+                    <td style="height: 3px;">Player</td>
                     <td>Matches</td>
                     <td>Innings</td>
                     <td>NO</td>
@@ -81,7 +81,7 @@
                     <td>Economy</td>
                     <td>SR</td>
                     <td>5</td>
-                    <td>Catches</td>
+                    
                     
                  </tr>
                    @foreach ($bowlers  as $bowler )
@@ -98,7 +98,7 @@
                     <td>{{$bowler->econ}}</td>
                     <td>{{$bowler->sr}}</td>
                     <td>{{$bowler->fivefas}}</td>
-                    <td>{{$bowler->catches}}</td>
+                    
 
 
                  </tr>
