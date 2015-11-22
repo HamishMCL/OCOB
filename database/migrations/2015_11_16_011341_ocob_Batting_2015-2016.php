@@ -26,6 +26,7 @@ class OcobBatting20152016 extends Migration
             $table->integer('ducks');
             $table->integer('fours');
             $table->integer('sixs');
+            $table->integer('outs');
             $table->timestamps();
         });
     }

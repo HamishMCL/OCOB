@@ -1,24 +1,20 @@
-<html>
-<head>
-  <title>OCOB - Admin</title>
-   <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-     <link href='https://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
-     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-     <link rel="stylesheet" type="text/css" href="{{ asset('css/ocob.css') }}">
+@extends('layout')
 
-</head>
-<body>
-   <nav>
+@section('nav')
+   <nav style="background-color: #6FCDB8;">
           <div id="area">
-                <h1 style="display:inline-block; padding: 15px; float: left;"><a href="">Admin</a></h1>
+                <h1 style="display:inline-block; padding: 15px; float: left;"><a href="/admin">Admin</a></h1>
             <ul>
               <li> <a href="">Create New Player</a> </li>
-              <li> <a href="">Create New Bowling Innings</a> </li>
+              <li> <a href="/bowling">Create New Bowling Innings</a> </li>
               
             </ul>
             </div>
         
         </nav>
+@stop
+
+@section('content')
         <div style="height: 30px; width:100%;">
         </div>
 
@@ -41,5 +37,4 @@
 
       </div>
 
-</body>
-</html>
+@stop

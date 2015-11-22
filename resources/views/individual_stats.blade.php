@@ -1,30 +1,27 @@
-<html>
-<head>
-	<title>OCOB - Individual</title>
-	 <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-     <link href='https://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
-     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-     <link rel="stylesheet" type="text/css" href="{{ asset('css/ocob.css') }}">
-
-</head>
-<body>
-   <nav>
-          <div id="area">
-                <h1 style="display:inline-block; padding: 15px"><a href="/">Otaki College Old boys 2015-2016</a></h1>
+@extends('layout')
+@section('title' )
+<title>OCOB - Stats</title>
+@stop
+@section('nav')
+    <nav>
+       <div id="area">
+                <h1 style="display:inline-block; padding: 20px"><a href="/">Otaki College Old boys 2015-2016</a></h1>
             <ul>
-                <li> <a href="/results">Results</a></li>
-                <li> <a href="">Individual Stats</a> </li>
+               
+                <li> <a href="/individual">Individual Stats</a> </li>
             </ul>
             </div>
-        
         </nav>
+@stop
 
+
+@section('content')
             <div id="area">
           <h1 style="margin-bottom: 30px;">Otaki College Old boys 2015-2016</h1>
-
-         <table cellspacing="0" style="width: 100%; border-collapse: collapse;">
+          <h3>Batting</h3>
+         <table cellspacing="0" style="width: 100%; border-collapse: collapse;margin-top: 20px; margin-bottom: 20px;">
             <tbody >
-                 <tr class="most_sixes number_one">
+                 <tr class="most_sixes number_one" style="height:20px;">
                     <td >Player</td>
                     <td>Matches</td>
                     <td>Innings</td>
@@ -37,23 +34,25 @@
                     <td>0s</td>
                     <td>4s</td>
                     <td>6s</td>
+                    <td>Outs</td>
                     
                  </tr>
             
-                 @foreach ($players  as $player )
+                 @foreach ($batters  as $batter )
                  <tr class="most_sixes">
-                    <td>{{$player->player}}</td>
-                    <td>{{$player->matches}}</td>
-                    <td>{{$player->innings}}</td>
-                    <td>{{$player->no}}</td>
-                    <td>{{$player->runs}}</td>
-                    <td>{{$player->average}}</td>
-                    <td>{{$player->highest_score}}</td>
-                    <td>{{$player->hunds}}</td>
-                    <td>{{$player->fiftys}}</td>
-                    <td>{{$player->ducks}}</td>
-                    <td>{{$player->fours}}</td>
-                    <td>{{$player->sixs}}</td>
+                    <td>{{$batter->player}}</td>
+                    <td>{{$batter->matches}}</td>
+                    <td>{{$batter->innings}}</td>
+                    <td>{{$batter->no}}</td>
+                    <td>{{$batter->runs}}</td>
+                    <td>{{$batter->average  }}</td>
+                    <td>{{$batter->highest_score}}</td>
+                    <td>{{$batter->hunds}}</td>
+                    <td>{{$batter->fiftys}}</td>
+                    <td>{{$batter->ducks}}</td>
+                    <td>{{$batter->fours}}</td>
+                    <td>{{$batter->sixs}}</td>
+                    <td>{{$batter->outs}}</td>
 
                  </tr>
                     
@@ -65,7 +64,54 @@
              </tbody>
          </table>   
 
+         <h3>Bowling</h3>
+
+                 <table cellspacing="0" style="width: 100%; border-collapse: collapse;margin-top: 20px; margin-bottom: 20px;">
+            <tbody >
+                 <tr class="most_sixes number_one">
+                    <td >Player</td>
+                    <td>Matches</td>
+                    <td>Innings</td>
+                    <td>Overs</td>
+                    <td>Maidens</td>
+                    <td>Runs</td>
+                    <td> Wickets</td>
+                    <td>BBI</td>
+                    <td>Average</td>
+                    <td>Economy</td>
+                    <td>SR</td>
+                    <td>5</td>
+                    <td>Catches</td>
+                    
+                 </tr>
+                   @foreach ($bowlers  as $bowler )
+                 <tr class="most_sixes">
+                    <td>{{$bowler->player}}</td>
+                    <td>{{$bowler->matches}}</td>
+                    <td>{{$bowler->innings}}</td>
+                    <td>{{$bowler->overs}}</td>
+                    <td>{{$bowler->maidens}}</td>
+                    <td>{{$bowler->runs}}</td>
+                    <td>{{$bowler->wickets}}</td>
+                    <td>{{$bowler->bbi}}</td>
+                    <td>{{$bowler->average}}</td>
+                    <td>{{$bowler->econ}}</td>
+                    <td>{{$bowler->sr}}</td>
+                    <td>{{$bowler->fivefas}}</td>
+                    <td>{{$bowler->catches}}</td>
+
+
+                 </tr>
+                    
+                 
+
+                 @endforeach
+
+     
+       
+             </tbody>
+         </table>
+
 
     </div>
-</body>
-</html>
+@stop

@@ -11,25 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('stats');
-});
 
+Route::get('/',[
+	'uses' => 'adminController@get_stats',
+	]);
 
 Route::get('/results', function () {
     return view('results');
 });
-
-
-
-Route::get('/admin',[
-	'uses' => 'adminController@get_Admin',
-	'as' => 'admin',
-	]);
-
-Route::post('/admin',[
-	'uses' => 'adminController@update_stats',
-	]);
 
 
 Route::get('/individual',[
@@ -39,6 +28,13 @@ Route::get('/individual',[
 
 
 
+
+/*
+|--------------------------------------------------------------------------
+| Admin Routes
+|--------------------------------------------------------------------------
+|
+*/
 Route::get('/createNewPlayer',[
 	'uses' => 'adminController@get_New_Player',
 	'as' => 'new_player',
@@ -47,4 +43,20 @@ Route::get('/createNewPlayer',[
 
 Route::post('/createNewPlayer',[
 	'uses' => 'adminController@create_new_player',
+	]);
+
+Route::get('/admin',[
+	'uses' => 'adminController@get_Admin',
+	'as' => 'admin',
+	]);
+
+Route::post('/admin',[
+	'uses' => 'adminController@update_batting',
+	]);
+Route::get('/bowling',[
+	'uses' => 'adminController@get_bowling',
+	]);
+
+Route::post('/bowling',[
+	'uses' => 'adminController@update_bowling',
 	]);
