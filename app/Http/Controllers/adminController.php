@@ -33,11 +33,11 @@ class adminController extends Controller
 
     public function get_stats()
     {
-        $sixes = DB::table('ocob_Batting')->orderBy('sixs', 'DESC')->take(5)->get();
-        $runs = DB::table('ocob_Batting')->orderBy('runs', 'DESC')->take(5)->get();
-        $average = DB::table('ocob_Batting')->orderBy('average', 'DESC')->take(5)->get();
+        $sixes = DB::table('ocob_batting')->orderBy('sixs', 'DESC')->take(5)->get();
+        $runs = DB::table('ocob_batting')->orderBy('runs', 'DESC')->take(5)->get();
+        $average = DB::table('ocob_batting')->orderBy('average', 'DESC')->take(5)->get();
         $wickets = DB::table('ocob_Bowling')->orderBy('wickets', 'DESC')->take(5)->get();
-        $highestscore = DB::table('ocob_Batting')->orderBy('highest_score', 'DESC')->take(5)->get();
+        $highestscore = DB::table('ocob_batting')->orderBy('highest_score', 'DESC')->take(5)->get();
        
 
         return view('stats',compact('sixes','runs','average','wickets','highestscore'));
@@ -69,7 +69,7 @@ class adminController extends Controller
 
     $id = $request->input('id');
     
-    $player = DB::table('ocob_Batting')->where('player', $id)->first();
+    $player = DB::table('ocob_batting')->where('player', $id)->first();
     $player->matches +=1;
 
     $player->runs += $request->input('runs');
@@ -154,7 +154,7 @@ class adminController extends Controller
     {
     }
 
-    DB::table('ocob_Batting')
+    DB::table('ocob_batting')
     ->where('player', $id)
     ->update(['matches'=> $player->matches,'innings'=>$player->innings,'no'=>$player->no,'runs'=>$player->runs,'average' => $player->average
         ,'highest_score' => $player->highest_score,'hunds' => $player->hunds,'fiftys' => $player->fiftys,'ducks' => $player->ducks,
