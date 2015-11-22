@@ -117,7 +117,7 @@
                 margin-bottom: 50px;
             }
 
-            .float-right
+            #float-right
             {
                 float: right;
             }
@@ -139,6 +139,14 @@
             #most_sixes_container
             {
                display: block;
+            }
+            table{
+                width: 100px;
+            }
+
+            #float-right
+            {
+               
             }
 
 

@@ -26,7 +26,7 @@
     |
     |
    ============================== -->
-        <div id="most_sixes_container">
+     
           <h2 style="font-family: 'Archivo Black">Most Sixes</h2>
           <table cellspacing="0" style=" width: 100%; border-collapse: collapse;">
             <tbody >
@@ -65,7 +65,7 @@
        
              </tbody>
          </table>     
-    </div>
+ 
      <!--=======================
     |
     | Most Runs
@@ -74,7 +74,7 @@
     |
     -->
 
-                 <div id="most_sixes_container">
+   
           <h2 style="font-family: 'Archivo Black">Most Runs</h2>
 
           <table cellspacing="0" style="width: 100%; border-collapse: collapse;">
@@ -112,7 +112,7 @@
        
              </tbody>
          </table>     
-      </div>
+  
       <!--
     |
     | Most Wickets
@@ -121,7 +121,7 @@
     |
     -->
 
-       <div id="most_sixes_container">
+       <div id="most_sixes_container float-left">
           <h2 style="font-family: 'Archivo Black">Most Wickets</h2>
           <table cellspacing="0" style="width: 100%; border-collapse: collapse;">
             <tbody >
@@ -167,7 +167,7 @@
     |
     |
     -->
- <div id="most_sixes_container">
+ <div id="most_sixes_container float-right">
           <h2 style="font-family: 'Archivo Black">Highest Average</h2>
           <table cellspacing="0" style="width: 100%; border-collapse: collapse;">
             <tbody >
