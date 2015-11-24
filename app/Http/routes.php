@@ -16,10 +16,12 @@ Route::get('/',[
 	'uses' => 'adminController@get_stats',
 	]);
 
-Route::get('/results', function () {
-    return view('results');
-});
-
+Route::get('/batting-stats', [
+    'uses' => 'adminController@batting_stats',
+]);
+Route::get('/bowling-stats', [
+    'uses' => 'adminController@bowling_stats',
+]);
 
 Route::get('/individual',[
 	'uses' => 'adminController@get_all_stats',

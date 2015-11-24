@@ -16,10 +16,10 @@
 
 
 @section('content')
-            <div id="stats">
+            
           <h1 style="margin-bottom: 30px;">Otaki College Old boys 2015-2016</h1>
-          <h3>Batting</h3>
-         <table cellspacing="0" style="width: 100%; border-collapse: collapse;margin-top: 20px; margin-bottom: 20px;">
+          <h3 style="text-align:center;">Batting</h3>
+         <table cellspacing="0" style="width: 35%; border-collapse: collapse;margin-top: 20px; margin-bottom: 20px;">
             <tbody >
                  <tr class="most_sixes number_one" >
                     <td style="height: 3px;">Player</td>
@@ -64,11 +64,11 @@
              </tbody>
          </table>   
 
-         <h3>Bowling</h3>
+         <h3 style="text-align:center;">Bowling</h3>
 
-                 <table cellspacing="0" style="width: 100%; border-collapse: collapse;margin-top: 20px; margin-bottom: 20px;">
+                 <table cellspacing="0" style="width:10%; border-collapse: collapse;margin-top: 20px; margin-bottom: 20px;">
             <tbody >
-                 <tr class="most_sixes number_one">
+                 <tr class="most_sixes number_one head">
                     <td >Player</td>
                     <td>Matches</td>
                     <td>Innings</td>
@@ -113,5 +113,4 @@
          </table>
 
 
-    </div>
 @stop

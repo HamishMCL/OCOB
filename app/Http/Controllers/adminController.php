@@ -16,6 +16,22 @@ class adminController extends Controller
         return view('admin.create_new_player');
     }
 
+    public function batting_stats()
+    {
+        $batters = ocob_Batting::all();
+
+        return view('batting-stats',compact('batters'));
+    }
+
+
+      public function bowling_stats()
+    {
+        $bowlers = ocob_Bowling::all();
+
+        return view('bowling-stats',compact('bowlers'));
+    }
+
+
 
     public function get_Admin()
     {
@@ -138,10 +154,10 @@ class adminController extends Controller
        
     }
 
-      if($request->input('out') != 1)
+      if($request->input('out') == 0)
     {
      
-        // $player->no +=1;
+         $player->no +=1;
        
     }
 
@@ -212,7 +228,7 @@ class adminController extends Controller
    public function get_All_Stats()
    {
 
-        $batters = ocob_Batting::all();
+        
         $bowlers = ocob_Bowling::all();
      
         return view('individual_stats',compact('batters', 'bowlers'));
