@@ -111,7 +111,7 @@ class adminController extends Controller
     {
             if($request->input('out') == 0 )
             {
-                $player->highest_score =  $runs."*";
+                $player->highest_score =  $runs+"*";
             }else
             {
                 $player->highest_score =  $runs;

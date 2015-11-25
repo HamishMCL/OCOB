@@ -20,7 +20,7 @@ class OcobBatting20152016 extends Migration
             $table->integer('no');
             $table->integer('runs');
             $table->float('average');
-            $table->string('highest_score');
+            $table->integer('highest_score');
             $table->integer('hunds');
             $table->integer('fiftys');
             $table->integer('ducks');
