@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class UpdateBowling extends Migration
+class BowlingUpdate extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,8 @@ class UpdateBowling extends Migration
     {
         Schema::table('ocob_Bowling', function (Blueprint $table) {
             //
-            
+            $table->integer('most_wickets');
+            $table->integer('least_runs');
         });
     }
 
