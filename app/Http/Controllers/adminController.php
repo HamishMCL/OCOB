@@ -55,8 +55,8 @@ class adminController extends Controller
         $runs = DB::table('ocob_batting')->orderBy('runs', 'DESC')->take(5)->get();
         $average = DB::table('ocob_batting')->orderBy('average', 'DESC')->take(5)->get();
         $wickets = DB::table('ocob_Bowling')->orderBy('wickets', 'DESC')->take(5)->get();
-        $highestscore = DB::table('ocob_batting')->orderBy('highest_score', 'DESC')->take(5)->get();
-       
+        $highestscore = DB::table('ocob_batting')->orderBy('highest_score', 'DESC')->take(6)->get();
+       // dd($highestscore);
 
         return view('stats',compact('sixes','runs','average','wickets','highestscore'));
     }
@@ -129,11 +129,9 @@ class adminController extends Controller
         $player->hunds +=1;
     }
 
-    //working
-       
+ 
 
 
-//Not working
     if($runs == 0 && $request->input('out') == 1)
     {
         
@@ -154,7 +152,7 @@ class adminController extends Controller
        
     }
 
-      if($request->input('out') == 0)
+      if($request->input('out') == 0 && $runs != null)
     {
      
          $player->no +=1;
@@ -197,7 +195,10 @@ class adminController extends Controller
     $runs =  $request->input('runs');
 
     $player->matches +=1;
+    if($request->input('overs') >=1)
+    {
     $player->innings += 1;
+    }
     if($request->input('wickets') >= 5)
     {
     $player->fivefas += 1;
@@ -209,10 +210,20 @@ class adminController extends Controller
     $player->overs += $request->input('overs');
     $player->maidens += $request->input('maidens');
     $player->runs += $request->input('runs');
-
-    $player->average = $player->runs / $player->wickets;
+    if($player->wickets >= 1 && $player->runs >= 1)
+    {
+         $player->average = $player->runs / $player->wickets;
+    }
+   
+   if($player->overs >=1 && $player->runs >=1)
+   {
     $player->econ = $player->runs / $player->overs;
-    $player->sr = $player->overs * 6 / $player->wickets;
+    }
+    if($player->wickets >= 1)
+    {
+         $player->sr = $player->overs * 6 / $player->wickets;
+    }
+   
 
     if($wickets > $player->most_wickets)
     {
