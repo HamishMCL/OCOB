@@ -51,7 +51,7 @@
                     <td>{{$bowler->maidens}}</td>
                     <td>{{$bowler->runs}}</td>
                     <td>{{$bowler->wickets}}</td>
-                    <td>{{$bowler->bbi}}</td>
+                    <td>{{$bowler->most_wickets}} / {{$bowler->least_runs}}</td>
                     <td>{{$bowler->average}}</td>
                     <td>{{$bowler->econ}}</td>
                     <td>{{$bowler->sr}}</td>

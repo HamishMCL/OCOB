@@ -193,6 +193,8 @@ class adminController extends Controller
     
     $player = DB::table('ocob_Bowling')->where('player', $id)->first();
 
+    $wickets =  $request->input('wickets');
+    $runs =  $request->input('runs');
 
     $player->matches +=1;
     $player->innings += 1;
@@ -212,13 +214,21 @@ class adminController extends Controller
     $player->econ = $player->runs / $player->overs;
     $player->sr = $player->overs * 6 / $player->wickets;
 
-    
+    if($wickets > $player->most_wickets)
+    {
+        $player->most_wickets = $wickets;
+        $player->least_runs = $runs;
+         
+    }
 
+
+    // $player->bbi =  $request->input('wickets') +'/' + $request->input('runs');
+   
     DB::table('ocob_Bowling')
     ->where('player', $id)
     ->update(['matches'=> $player->matches,'innings'=>$player->innings,'overs'=>$player->overs,'maidens'=>$player->maidens,'runs' => $player->runs
         ,'wickets' => $player->wickets,'bbi' => $player->bbi,'average' => $player->average,'econ' => $player->econ,
-        'sr' => $player->sr,'fivefas' => $player->fivefas,'catches'=> $player->catches]);
+        'sr' => $player->sr,'fivefas' => $player->fivefas,'catches'=> $player->catches, 'most_wickets' => $player->most_wickets, 'least_runs'=>$player->least_runs]);
 
      
     return redirect('/bowling');
