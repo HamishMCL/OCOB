@@ -27,8 +27,6 @@ class OcobBowling20152016 extends Migration
             $table->integer('sr');
             $table->integer('fivefas');
             $table->integer('catches');
-            $table->integer('most_wickets');
-            $table->integer('least_runs');
             $table->timestamps();
         });
     }
