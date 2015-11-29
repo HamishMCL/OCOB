@@ -1,6 +1,7 @@
 @extends('layout')
 @section('title')
 <title>OCOB - Batting</title>
+
 @stop
 
 @section('nav')
@@ -23,37 +24,37 @@
          <table cellspacing="0" class="test" style="width:80%; border-collapse: collapse; margin:auto;">
             <tbody >
                  <tr class="most_sixes number_one" >
-                    <td ><h4>Player</h4></td>
-                    <td><h4>Matches</h4></td>
-                    <td><h4>Innings</h4></td>
-                    <td><h4>NO</h4></td>
-                    <td><h4>Average</h4></td>
-                    <td><h4>Runs</h4></td>
-                    <td> <h4>Highest Score</h4></td>
-                    <td><h4>100s</h4></td>
-                    <td><h4>50s</h4></td>
-                    <td><h4>0s</h4></td>
-                    <td><h4>4's</h4></td>
-                    <td><h4>6's</h4></td>
-                    <td><h4>Outs</h4></td>
+                    <td class="one" ><h4  >Player</h4></td>
+                    <td  class="one"><h4>Matches</h4></td>
+                    <td class="one"><h4>Innings</h4></td>
+                    <td class="one"><h4>NO</h4></td>
+                    <td class="one"><h4>Average</h4></td>
+                    <td class="one"><h4>Runs</h4></td>
+                    <td class="one"> <h4>Highest Score</h4></td>
+                    <td class="one"><h4>100s</h4></td>
+                    <td class="one"><h4>50s</h4></td>
+                    <td class="one"><h4>0s</h4></td>
+                    <td class="one"><h4>4's</h4></td>
+                    <td class="one"><h4>6's</h4></td>
+                    <td class="one"><h4>Outs</h4></td>
                     
                  </tr>
             
                  @foreach ($batters  as $batter )
                  <tr class="most_sixes">
-                    <td>{{$batter->player}}</td>
-                    <td>{{$batter->matches}}</td>
-                    <td>{{$batter->innings}}</td>
-                    <td>{{$batter->no}}</td>
-                    <td>{{ $batter->average}}</td>
-                    <td>{{$batter->runs  }}</td>
-                    <td>{{$batter->highest_score}}</td>
-                    <td>{{$batter->hunds}}</td>
-                    <td>{{$batter->fiftys}}</td>
-                    <td>{{$batter->ducks}}</td>
-                    <td>{{$batter->fours}}</td>
-                    <td>{{$batter->sixs}}</td>
-                    <td>{{$batter->outs}}</td>
+                    <td class="one">{{$batter->player}}</td>
+                    <td class="matches">{{$batter->matches}}</td>
+                    <td class="innings">{{$batter->innings}}</td>
+                    <td class="no">{{$batter->no}}</td>
+                    <td class="average">{{ $batter->average}}</td>
+                    <td class="runs">{{$batter->runs  }}</td>
+                    <td class="highest_score">{{$batter->highest_score}}</td>
+                    <td class="hunds">{{$batter->hunds}}</td>
+                    <td class="fiftys">{{$batter->fiftys}}</td>
+                    <td class="ducks">{{$batter->ducks}}</td>
+                    <td class="fours">{{$batter->fours}}</td>
+                    <td class="sixs">{{$batter->sixs}}</td>
+                    <td class="outs">{{$batter->outs}}</td>
 
                  </tr>
                     
@@ -65,5 +66,7 @@
              </tbody>
          </table>  
        </div> 
+
+       <script src="/js/table_cross_hair.js"> </script>
         
 @stop

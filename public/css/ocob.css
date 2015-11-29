@@ -53,7 +53,7 @@
                 width: 100%;
              
                 background-color: white;
-                border: 1pt solid #E3E3E3;
+                /*border: 1pt solid #E3E3E3;*/
             }
 
             .most_sixes:hover
@@ -129,20 +129,15 @@
              margin:auto;
            }
 
-           
+           .one{
+                background-color: #A0B8ED ;
+                color:black;
+           }
+           .test
+           {
+             background-color: #E6E3E3;
+            
+           }
 
        
 
-        
- @media screen and (max-device-width: 375px) {
-    
-         
-
-
-
-
-            
-
-
-    
-}

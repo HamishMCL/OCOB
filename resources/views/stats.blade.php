@@ -77,7 +77,7 @@
     -->
 
     
-     <div class="test">
+     <div class="">
           <h2 class="top_performing_title">Most Runs</h2>
           <table cellspacing="0" class="top_performing" >
             <tbody >
@@ -128,7 +128,7 @@
           <h2 class="top_performing_title">Most Wickets</h2>
           <table cellspacing="0" class="top_performing" >
             <tbody >
-                    <tr class="most_sixes number_one">
+                    <tr class="most_sixes number_one one">
                     <td > <span >1st</span></td>
                     <td  > <h3>{{$wickets[0]->player}}</h3></td>
                     <td style="width: 35px;"> <h4>{{$wickets[0]->wickets}}</h4><h5>Wickets</h5></td>

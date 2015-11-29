@@ -27,35 +27,35 @@
                  <table cellspacing="0" class="test" style="width:80%; border-collapse: collapse; margin:auto;">
             <tbody >
                  <tr class="most_sixes number_one">
-                    <td ><h4>Player</h4></td>
-                    <td><h4>Matches</h4></td>
-                    <td><h4>Innings</h4></td>
-                    <td><h4>Overs</h4></td>
-                    <td><h4>Maidens</h4></td>
-                    <td><h4>Runs</h4></td>
-                    <td> <h4>Wickets</h4></td>
-                    <td><h4>BBI</h4></td>
-                    <td><h4>Ave</h4></td>
-                    <td><h4>Econ</h4></td>
-                    <td><h4>SR</h4></td>
-                    <td><h4>5w</h4></td>
+                    <td class="one"  ><h4>Player</h4></td>
+                    <td class="one" ><h4>Mat</h4></td>
+                    <td class="one" ><h4>Inn</h4></td>
+                    <td class="one" ><h4>Overs</h4></td>
+                    <td class="one" ><h4>Mdns</h4></td>
+                    <td class="one" ><h4>Runs</h4></td>
+                    <td class="one" > <h4>Wickets</h4></td>
+                    <td class="one" ><h4>BBI</h4></td>
+                    <td class="one" ><h4>Ave</h4></td>
+                    <td class="one" ><h4>Econ</h4></td>
+                    <td class="one" ><h4>SR</h4></td>
+                    <td class="one" ><h4>5w</h4></td>
                     
                     
                  </tr>
                    @foreach ($bowlers  as $bowler )
                  <tr class="most_sixes">
-                    <td>{{$bowler->player}}</td>
-                    <td>{{$bowler->matches}}</td>
-                    <td>{{$bowler->innings}}</td>
-                    <td>{{$bowler->overs}}</td>
-                    <td>{{$bowler->maidens}}</td>
-                    <td>{{$bowler->runs}}</td>
-                    <td>{{$bowler->wickets}}</td>
-                    <td>{{$bowler->most_wickets}} / {{$bowler->least_runs}}</td>
-                    <td>{{$bowler->average}}</td>
-                    <td>{{$bowler->econ}}</td>
-                    <td>{{$bowler->sr}}</td>
-                    <td>{{$bowler->fivefas}}</td>
+                    <td class="one" >{{$bowler->player}}</td>
+                    <td class="matches">{{$bowler->matches}}</td>
+                    <td class="innings">{{$bowler->innings}}</td>
+                    <td class="no">{{$bowler->overs}}</td>
+                    <td class="runs">{{$bowler->maidens}}</td>
+                    <td class="average">{{$bowler->runs}}</td>
+                    <td class="highest_score">{{$bowler->wickets}}</td>
+                    <td class="hunds">{{$bowler->most_wickets}} / {{$bowler->least_runs}}</td>
+                    <td class="fiftys">{{$bowler->average}}</td>
+                    <td class="ducks">{{$bowler->econ}}</td>
+                    <td class="fours">{{$bowler->sr}}</td>
+                    <td class="sixs">{{$bowler->fivefas}}</td>
                     
 
 
@@ -70,4 +70,6 @@
              </tbody>
          </table>
 </div>
+
+<script src="/js/table_cross_hair.js"> </script>
 @stop

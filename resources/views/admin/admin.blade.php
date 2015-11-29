@@ -1,5 +1,9 @@
 @extends('layout')
+@section('title')
+<title>Admin</title>
+<link rel="stylesheet" type="text/css" href="/css/sweetalert.css">
 
+@stop
 @section('nav')
   <nav style="background-color: #6FCDB8;">
        <div id="area" >
@@ -15,6 +19,7 @@
 
 
 @section('content')
+<div id="stats">
         <div style="height: 30px; width:100%;">
         </div>
 
@@ -24,9 +29,9 @@
    		<h1 style="margin-top: 50px;">Batting</h1>
    		<hr style="text-decoration: ridge;">
    		
-   		<form   method="POST" action="/admin">
+   		<form  method="POST" action='/admin' >
 	   		<h2>Player</h2>
-	   		<select name="id">
+	   		<select name="id" v-model="player">
             <option></option>
           @foreach($players as $player)
             <option value="{{$player->player}}">{{$player->player}}</option>
@@ -37,19 +42,25 @@
 			</select>
 			
 	      	<h2>Runs</h2>
-	      	<input type="number" name="runs"/>
+	      	<input type="number" name="runs" v-model="runs"/>
 	      	<h2>6's</h2>
-	      	<input type="number" name="sixes"/>
+	      	<input type="number" name="sixes" v-model="sixes"/>
 	      	<h2>4's</h2>
-	      	<input type="number" name="fours"/>
+	      	<input type="number" name="fours" v-model="fours"/>
 	      	<h2>Out</h2>
-	      	<h6>Yes</h6><input style="display: block;"type="radio" name="out" value="1"/>
-          <h6>No</h6><input style="display: block;"type="radio" name="out" value="0"/>
+	      	<h6>Yes</h6><input style="display: block;"type="radio" name="out" v-model="out" value="1" />
+          <h6>No</h6><input style="display: block;"type="radio" name="out" v-model="out" value="0"/>
 
-	      	<button type="submit">Submit</button>
+	      	<button v-on:click="addBattingStats">Submit</button>
 	      	<input type="hidden" name="_token" value="{{Session::token() }}"></input>
      	</form>
 
    		</div>
+</div>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.10/vue.min.js"></script>
+<script src="/js/ocob.js"></script>
+<script src='/js/sweetalert.min.js'></script>
 
 @stop

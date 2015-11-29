@@ -22,8 +22,8 @@ class OcobBowling20152016 extends Migration
             $table->float('runs');
             $table->integer('wickets');
             $table->string('bbi');
-            $table->integer('average');
-            $table->integer('econ');
+            $table->float('average');
+            $table->float('econ');
             $table->integer('sr');
             $table->integer('fivefas');
             $table->integer('catches');
