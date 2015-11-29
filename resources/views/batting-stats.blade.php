@@ -42,7 +42,7 @@
             
                  @foreach ($batters  as $batter )
                  <tr class="most_sixes">
-                    <td class="one">{{$batter->player}}</td>
+                    <td >{{$batter->player}}</td>
                     <td class="matches">{{$batter->matches}}</td>
                     <td class="innings">{{$batter->innings}}</td>
                     <td class="no">{{$batter->no}}</td>
