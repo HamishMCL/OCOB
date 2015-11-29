@@ -141,3 +141,25 @@
 
        
 
+@media screen and (max-width: 591px) {
+  nav
+  {
+    height: 120px;
+    text-align: center;
+  }
+
+  ul
+  {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .batting_heading
+  {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  
+  }
+}

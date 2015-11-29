@@ -15,28 +15,31 @@
             </ul>
             </div>
     </nav>
+
+   
+  
 @stop
 
 @section('content')
 <div id="most_sixes_container float-left">
    <h1 style="margin-bottom: 30px; ;">Otaki College Old boys 2015-2016</h1>
-          <h2 style="text-align:center; display: block; margin-bottom: 20px; margin-top: 20px;">Batting</h2>
-         <table cellspacing="0" class="test" style="width:80%; border-collapse: collapse; margin:auto;">
+          <h2 class="batting_heading" style="text-align:center; display: block; margin-bottom: 20px; margin-top: 20px;">Batting</h2>
+         <table cellspacing="0" class="test" style="width:100%; border-collapse: collapse; margin:auto;">
             <tbody >
                  <tr class="most_sixes number_one" >
-                    <td class="one" ><h4  >Player</h4></td>
-                    <td  class="one"><h4>Matches</h4></td>
-                    <td class="one"><h4>Innings</h4></td>
-                    <td class="one"><h4>NO</h4></td>
-                    <td class="one"><h4>Average</h4></td>
-                    <td class="one"><h4>Runs</h4></td>
-                    <td class="one"> <h4>Highest Score</h4></td>
-                    <td class="one"><h4>100s</h4></td>
-                    <td class="one"><h4>50s</h4></td>
-                    <td class="one"><h4>0s</h4></td>
-                    <td class="one"><h4>4's</h4></td>
-                    <td class="one"><h4>6's</h4></td>
-                    <td class="one"><h4>Outs</h4></td>
+                    <td class="one" style="width: 1%;"><h4  >Player</h4></td>
+                    <td  class="one" style="width: 1%;"><h4>Mat</h4></td>
+                    <td class="one" style="width: 1%;"><h4>Inn</h4></td>
+                    <td class="one" style="width: 1%;"><h4>NO</h4></td>
+                    <td class="one" style="width: 1%;"><h4>Ave</h4></td>
+                    <td class="one" style="width: 1%;"><h4>Runs</h4></td>
+                    <td class="one" style="width: 1%;"> <h4>HS</h4></td>
+                    <td class="one" style="width: 1%;"><h4>100s</h4></td>
+                    <td class="one" style="width: 1%;"><h4>50s</h4></td>
+                    <td class="one" style="width: 1%;"><h4>0s</h4></td>
+                    <td class="one" style="width: 1%;"><h4>4's</h4></td>
+                    <td class="one" style="width: 1%;"><h4>6's</h4></td>
+                    <td class="one" style="width: 1%;"><h4>Outs</h4></td>
                     
                  </tr>
             
