@@ -24,21 +24,21 @@
  <h1 style="margin-bottom: 30px;">Otaki College Old boys 2015-2016</h1>
         <h2 style="text-align:center; display:block;margin-bottom: 20px; margin-top: 20px;">Bowling</h2>
 
-                 <table cellspacing="0" class="test" style="width:80%; border-collapse: collapse; margin:auto;">
+                 <table cellspacing="0" class="test" style="width:100%; border-collapse: collapse; margin:auto;">
             <tbody >
                  <tr class="most_sixes number_one">
-                    <td class="one"  ><h4>Player</h4></td>
-                    <td class="one" ><h4>Mat</h4></td>
-                    <td class="one" ><h4>Inn</h4></td>
-                    <td class="one" ><h4>Overs</h4></td>
-                    <td class="one" ><h4>Mdns</h4></td>
-                    <td class="one" ><h4>Runs</h4></td>
-                    <td class="one" > <h4>Wickets</h4></td>
-                    <td class="one" ><h4>BBI</h4></td>
-                    <td class="one" ><h4>Ave</h4></td>
-                    <td class="one" ><h4>Econ</h4></td>
-                    <td class="one" ><h4>SR</h4></td>
-                    <td class="one" ><h4>5w</h4></td>
+                    <td class="one" style="width: 1%;" ><h4>Player</h4></td>
+                    <td class="one" style="width: 1%;"><h4>Mat</h4></td>
+                    <td class="one" style="width: 1%;"><h4>Inn</h4></td>
+                    <td class="one" style="width: 1%;"><h4>Overs</h4></td>
+                    <td class="one" style="width: 1%;"><h4>Mdns</h4></td>
+                    <td class="one" style="width: 1%;"><h4>Runs</h4></td>
+                    <td class="one" style="width: 1%;"> <h4>Wickets</h4></td>
+                    <td class="one" style="width: 1%;"><h4>BBI</h4></td>
+                    <td class="one" style="width: 1%;"><h4>Ave</h4></td>
+                    <td class="one" style="width: 1%;"><h4>Econ</h4></td>
+                    <td class="one" style="width: 1%;"><h4>SR</h4></td>
+                    <td class="one" style="width: 1%;"><h4>5w</h4></td>
                     
                     
                  </tr>

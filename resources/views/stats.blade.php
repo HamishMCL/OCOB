@@ -30,9 +30,9 @@
    ============================== -->
  
           <h2 class="top_performing_title">Most Sixes</h2>
-          <table cellspacing="0" class="top_performing" >
+          <table cellspacing="0" class="top_performing one" >
             <tbody >
-                    <tr class="most_sixes number_one">
+                    <tr class="most_sixes number_one one">
                     <td > <span >1st</span></td>
                     <td  > <h3 >{{$sixes[0]->player}}</h3></td>
                     <td style="width: 35px;"> <h4>{{$sixes[0]->sixs}}</h4><h5>Sixes</h5></td>
@@ -81,7 +81,7 @@
           <h2 class="top_performing_title">Most Runs</h2>
           <table cellspacing="0" class="top_performing" >
             <tbody >
-                    <tr class="most_sixes number_one">
+                    <tr class="most_sixes number_one one">
                     <td > <span >1st</span></td>
                     <td  > <h3 >{{$runs[0]->player}}</h3></td>
                     <td style="width: 35px;"> <h4>{{$runs[0]->runs}}</h4><h5>Runs</h5></td>
@@ -174,9 +174,9 @@
     -->
 
           <h2 class="top_performing_title">Highest Average</h2>
-          <table cellspacing="0" class="top_performing" >
+          <table cellspacing="0" class="top_performing " >
             <tbody >
-                    <tr class="most_sixes number_one">
+                    <tr class="most_sixes number_one one">
                     <td > <span >1st</span></td>
                     <td  > <h3>{{$average[0]->player}}</h3></td>
                     <td style="width: 35px;"> <h4>{{$average[0]->average}}</h4><h5>Ave</h5></td>
@@ -224,9 +224,9 @@
 
        
           <h2 class="top_performing_title">Highest Score</h2>
-          <table cellspacing="0" class="top_performing" >
+          <table cellspacing="0" class="top_performing "  style="margin-bottom: 30px;">
             <tbody >
-                    <tr class="most_sixes number_one">
+                    <tr class="most_sixes number_one one">
                     <td > <span >1st</span></td>
                     <td  > <h3>{{$highestscore[0]->player}}</h3></td>
                     <td style="width: 35px;"> <h4>{{$highestscore[0]->highest_score}}</h4></td>
