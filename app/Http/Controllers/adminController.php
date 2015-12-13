@@ -31,13 +31,16 @@ class adminController extends Controller
         return view('bowling-stats',compact('bowlers'));
     }
 
-
-
     public function get_Admin()
+    {
+        return view('admin.admin');
+    }
+
+    public function get_batting()
     {
          $players = ocob_Batting::all();
 
-        return view('admin.admin',compact('players'));
+        return view('admin.batting',compact('players'));
     }
 
     public function get_bowling()
@@ -56,7 +59,6 @@ class adminController extends Controller
         $average = DB::table('ocob_batting')->orderBy('average', 'DESC')->take(5)->get();
         $wickets = DB::table('ocob_Bowling')->orderBy('wickets', 'DESC')->take(5)->get();
         $highestscore = DB::table('ocob_batting')->orderBy('highest_score', 'DESC')->take(6)->get();
-       // dd($highestscore);
 
         return view('stats',compact('sixes','runs','average','wickets','highestscore'));
     }
@@ -95,14 +97,6 @@ class adminController extends Controller
     $player->fours += $request->input('fours');
   
     $runs = $request->input('runs');
-
-    //Player has played a match and not batted
-    // if($request->input('runs') == null && $request->input('sixes') == null && $request->input('fours')  )
-    // {
-    //     $player->matches +=1;
-    // }
-
-
 
 
 
@@ -178,7 +172,7 @@ class adminController extends Controller
 
 
 
-    return redirect('/admin');
+    return redirect('/batting');
 
 
 

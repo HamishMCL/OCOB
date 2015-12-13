@@ -24,7 +24,7 @@
  <h1 style="margin-bottom: 30px;">Otaki College Old boys 2015-2016</h1>
         <h2 style="text-align:center; display:block;margin-bottom: 20px; margin-top: 20px;">Bowling</h2>
 
-                 <table cellspacing="0" class="test" style="width:100%; border-collapse: collapse; margin:auto;">
+                 <table cellspacing="0" class="test" style="width:90%; border-collapse: collapse; margin:auto;">
             <tbody >
                  <tr class="most_sixes number_one">
                     <td class="one" style="width: 1%;" ><h4>Player</h4></td>

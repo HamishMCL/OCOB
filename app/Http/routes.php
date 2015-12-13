@@ -23,10 +23,10 @@ Route::get('/bowling-stats', [
     'uses' => 'adminController@bowling_stats',
 ]);
 
-Route::get('/individual',[
-	'uses' => 'adminController@get_all_stats',
-	'as' => 'individual',
-	]);
+// Route::get('/individual',[
+// 	'uses' => 'adminController@get_all_stats',
+// 	'as' => 'individual',
+// 	]);
 
 
 
@@ -52,9 +52,19 @@ Route::get('/admin',[
 	'as' => 'admin',
 	]);
 
-Route::post('/admin',[
+
+// Route::post('/admin',[
+// 	'uses' => 'adminController@update_batting',
+// 	]);
+
+Route::get('/batting',[
+	'uses' => 'adminController@get_batting',
+	]);
+
+Route::post('/batting',[
 	'uses' => 'adminController@update_batting',
 	]);
+
 Route::get('/bowling',[
 	'uses' => 'adminController@get_bowling',
 	]);

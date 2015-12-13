@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/ocob.css') }}">
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.10/vue.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="/js/ocob.js"></script>
+
 
 
 </head>

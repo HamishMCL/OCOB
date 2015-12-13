@@ -30,7 +30,7 @@
    ============================== -->
  
           <h2 class="top_performing_title">Most Sixes</h2>
-          <table cellspacing="0" class="top_performing one" >
+          <table cellspacing="0" class="top_performing one"  >
             <tbody >
                     <tr class="most_sixes number_one one">
                     <td > <span >1st</span></td>
