@@ -9,6 +9,10 @@ new Vue({
 		sixes: '',
 		fours: '',
 		out: '',
+		wickets: '',
+		overs: '',
+		maidens: '',
+		runs_conceded: '',
 
 	},
 
@@ -29,11 +33,11 @@ new Vue({
 
 		},
 
-			addBowlingStats: function(e)
+		addBowlingStats: function(e)
 		{
-			var r = confirm('Player:' + this.player +'\n'+ 'Sixes:'  +
-				this.sixes + '\n'+'Runs:' + this.runs +'\n'+
-				'Fours:'+""+ + this.fours +'\n'+ 'Out:'+ '+'+ this.out)
+			var r = confirm('Player:' + this.player +'\n'+ 'Wickets:'  +
+				this.wickets + '\n'+'Overs:' + this.overs +'\n'+
+				'Maidens:'+""+ + this.maidens +'\n'+ 'Runs Conceded:'+ '+'+ this.runs_conceded)
 			if(r == true)
 			{
 			}else

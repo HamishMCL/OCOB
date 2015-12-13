@@ -18,9 +18,9 @@ class adminController extends Controller
 
     public function batting_stats()
     {
-        $batters = ocob_Batting::all();
+        // $batters = ocob_Batting::all();
 
-        return view('batting-stats',compact('batters'));
+        return view('batting-stats');
     }
 
 
@@ -50,7 +50,17 @@ class adminController extends Controller
         return view('admin.bowling',compact('players'));
     }
 
+    public function getBattingInfo()
+    {
+       $batters = ocob_batting::all();
+       return $batters; 
+    }
 
+      public function getBowlingInfo()
+    {
+       $bowlers = ocob_bowling::all();
+       return $bowlers; 
+    }
 
     public function get_stats()
     {

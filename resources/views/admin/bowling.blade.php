@@ -31,7 +31,7 @@
    		
    		<form   method="POST" action="/bowling">
 	   		<h2>Player</h2>
-	   		<select class="form-control"  name="id">
+	   		<select class="form-control"  name="id" v-model="player">
           <option></option>
 				    @foreach($players as $player)
             <option value="{{$player->player}}">{{$player->player}}</option>
@@ -42,20 +42,24 @@
 			</select>
 			
 	      	<h2>Wickets</h2>
-	      	<input class="form-control" type="number" name="wickets"/>
+	      	<input class="form-control" type="number" name="wickets" v-model="wickets"/>
 	      	<h2>Overs</h2>
-	      	<input class="form-control" type="number" name="overs"/>
+	      	<input class="form-control" type="number" name="overs" v-model="overs"/>
 	      	<h2>Maidens</h2>
-	      	<input class="form-control" type="number" name="maidens"/>
+	      	<input class="form-control" type="number" name="maidens" v-model="maidens"/>
 	      	<h2>Runs conceded</h2>
-	      	<input class="form-control" style="display:block;margin-bottom: 5px;"stype="number" name="runs"/>
+	      	<input class="form-control" style="display:block;margin-bottom: 5px;" type="number" v-model="runs_conceded" name="runs"/>
       
 	    
 
-	      	<button class="btn btn-primary" type="submit">Submit</button>
+	      	<button class="btn btn-primary" v-on:click="addBowlingStats"type="submit">Submit</button>
 	      	<input type="hidden" name="_token" value="{{Session::token() }}"></input>
      	</form>
 
    		</div>
 </div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.10/vue.min.js"></script>
+<script src="/js/ocob.js"></script>
+
 @stop

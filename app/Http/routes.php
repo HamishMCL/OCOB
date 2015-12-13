@@ -72,3 +72,19 @@ Route::get('/bowling',[
 Route::post('/bowling',[
 	'uses' => 'adminController@update_bowling',
 	]);
+
+/*
+|--------------------------------------------------------------------------
+| API Routes
+|--------------------------------------------------------------------------
+|
+*/
+Route::get('/battinginfo',[
+	'uses' => 'adminController@getBattingInfo',
+
+	]);
+
+Route::get('/bowlinginfo',[
+	'uses' => 'adminController@getBowlingInfo',
+
+	]);
