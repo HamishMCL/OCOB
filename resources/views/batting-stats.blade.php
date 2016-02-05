@@ -36,6 +36,7 @@
           <h4> <span style="color:green; ">Note:</span> Click headers to sort table from lowest - highest.</h4>
          <table cellspacing="0" class="test" style="width:100%; border-collapse: collapse; margin-top:20px;">
             <tbody >
+          
                  <tr class="most_sixes number_one" >
                     <td class="one" style="width: 1%;"><a href="#" ng-click="sortBy = 'name';  reverse = !reverse ">Player</a></td>
                     <td  class="one" style="width: 1%;"><a href="#" ng-click="sortBy = 'matches';  reverse = !reverse ">Mat</a></td>

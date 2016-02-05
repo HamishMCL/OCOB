@@ -2,7 +2,8 @@
 
         ocob.controller('BattingSorting', function ($scope, $http) {
          $scope.sortBy = 'runs';
-          $scope.reverse = true;
+          $scope.reverse = false;
+
 
 
           $http({
@@ -20,8 +21,8 @@
 
           ocob.controller('BowlingSorting', function ($scope, $http) {
          $scope.sortBy = 'wickets';
-          $scope.reverse = true;
-
+          $scope.reverse = false;
+            $scope.2ndsort = '';
 
           $http({
           method: 'GET',

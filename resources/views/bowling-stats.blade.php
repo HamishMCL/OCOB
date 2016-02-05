@@ -38,7 +38,7 @@
                     <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'maidens';  reverse = !reverse ">Mdns</a></td>
                     <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'runs';  reverse = !reverse ">Runs</a></td>
                     <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'wickets';  reverse = !reverse ">Wickets</a></td>
-                    <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'most_wickets';  reverse = !reverse ">BBI</a></td>
+                    <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'most_wickets';   reverse = !reverse ">BBI</a></td>
                     <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'average';  reverse = !reverse ">Ave</a></td>
                     <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'econ';  reverse = !reverse ">Econ</a></td>
                     <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'sr';  reverse = !reverse ">SR</a></td>
@@ -56,7 +56,7 @@
                     <td class="runs">@{{bowler.maidens}}</td>
                     <td class="average">@{{bowler.runs}}</td>
                     <td class="highest_score">@{{bowler.wickets}}</td>
-                    <td class="hunds">@{{bowler.most_wickets}} / @{{bowler.least_runs}}</td>
+                    <td class="hunds">@{{bowler.most_wickets}} / @{{bowler.least_runs}} </td>
                     <td class="fiftys">@{{bowler.average}}</td>
                     <td class="ducks">@{{bowler.econ}}</td>
                     <td class="fours">@{{bowler.sr}}</td>

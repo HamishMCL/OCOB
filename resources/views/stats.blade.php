@@ -6,7 +6,7 @@
 @section('nav')
     <nav>
        <div id="area">
-                <h1 style="display:inline-block; padding: 20px"><a href="/">Otaki College Old boys 2015-2016</a></h1>
+                <h1 style="display:inline-block; padding: 20px; font-weight: 400"><a href="/">Otaki College Old boys 2015-2016</a></h1>
             <ul>
             
                 <li> <a href="/batting-stats">Batting Stats</a> </li>
@@ -32,6 +32,8 @@
           <h2 class="top_performing_title">Most Sixes</h2>
           <table cellspacing="0" class="top_performing one"  >
             <tbody >
+              
+            
                     <tr class="most_sixes number_one one">
                     <td > <span >1st</span></td>
                     <td  > <h3 >{{$sixes[0]->player}}</h3></td>
@@ -173,7 +175,7 @@
     |
     -->
 
-          <h2 class="top_performing_title">Highest Average</h2>
+          <h2 class="top_performing_title">Highest Averages</h2>
           <table cellspacing="0" class="top_performing " >
             <tbody >
                     <tr class="most_sixes number_one one">
@@ -223,7 +225,7 @@
     -->
 
        
-          <h2 class="top_performing_title">Highest Score</h2>
+          <h2 class="top_performing_title">Highest Scores</h2>
           <table cellspacing="0" class="top_performing "  style="margin-bottom: 30px;">
             <tbody >
                     <tr class="most_sixes number_one one">

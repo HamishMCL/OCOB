@@ -5,7 +5,7 @@
 
             html, body {
                 height: 100%;
-                background-color: #EDEDED;
+                background-color: #E3DFDF;
             }
             h1,h2,h3,h4,h5,h6,input,select
             {
@@ -17,6 +17,9 @@
             h3
             {
                 width: 300px;
+            }
+            a{
+              color: white;
             }
             #stats
             {
@@ -51,23 +54,23 @@
             .most_sixes
             {
                 width: 100%;
-             
+                height:15px;
                 background-color: white;
                 border: 1pt solid #E3E3E3;
        }
 
           
 
-            .number_one
-            {
-                background-color: #;
-            }
+            
             nav
             {
                 width: 100%;
                 height: 60px;
-                background-color: #5291DF;
-                border-bottom: 1px solid black;
+                background-color: #3498DB;
+                /*border-bottom: 1px solid black;*/
+              box-shadow: 0px 5px 15px -2px rgba(0,0,0,0.29);
+
+
                 position: fixed;
             }
             span
@@ -100,7 +103,7 @@
             }
             a{
                 text-decoration: none;
-                color: black;
+                color: #EBE9E9;
                 font-size: 20px;
                 font-family: "Josefin Sans";
 
@@ -115,11 +118,11 @@
            }
            .top_performing_title
            {
-            text-align:center;margin-top: 50px;margin-bottom: 30px;
+            text-align:center;margin-top: 50px;margin-bottom: 5px;
            }
            .number_one
            {
-            background-color:#F7F2E0 ; 
+        /*    background-color:#F7F2E0 ; */
               border-bottom: 1px solid black;
            }
            td h3
@@ -128,7 +131,7 @@
            }
 
            .one{
-                background-color: #A0B8ED ;
+                background-color: #ECECEC;
                 color:black;
            }
            .test
@@ -146,6 +149,7 @@
            table
            {
             border: 1px solid black;
+            box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.50);
            }
            tr{
 
