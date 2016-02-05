@@ -12,7 +12,7 @@
         }).then(function successCallback(response) {
                $scope.batters = response.data;
           }, function errorCallback(response) {
-
+            alert('error');
           });
 
 
@@ -22,11 +22,11 @@
           ocob.controller('BowlingSorting', function ($scope, $http) {
          $scope.sortBy = 'wickets';
           $scope.reverse = false;
-            $scope.2ndsort = '';
+      
 
           $http({
           method: 'GET',
-          url: 'http://ocob.xyz/bowlinginfo'
+          url: 'http://ocob.xyz/bowlingstats'
         }).then(function successCallback(response) {
                $scope.bowlers = response.data;
           }, function errorCallback(response) {
