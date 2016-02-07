@@ -26,7 +26,7 @@
 
           $http({
           method: 'GET',
-          url: 'http://ocob.xyz/bowlingstats'
+          url: 'http://ocob.xyz/bowlinginfo'
         }).then(function successCallback(response) {
                $scope.bowlers = response.data;
           }, function errorCallback(response) {
