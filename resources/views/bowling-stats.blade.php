@@ -8,7 +8,7 @@
 @section('nav')
 	  <nav>
        <div id="area">
-                <h1  style="display:inline-block; margin-left: 15px; float: left"><a href="/">Otaki College Old boys 2015-2016</a></h1>
+                <h1  style="display:inline-block; margin-left: 15px; float: left"><a href="/">Otaki College Old Boys</a></h1>
             <ul>
                
          
@@ -31,18 +31,18 @@
                  <table cellspacing="0" class="test" style="width:100%; border-collapse: collapse; margin-top:15px;">
             <tbody >
                  <tr class="most_sixes number_one">
-                    <td class="one" style="width: 1%;" ><a href="" ng-click="sortBy = 'player';  reverse = !reverse ">Player</a></td>
-                    <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'matches';  reverse = !reverse ">Mat</a></td>
-                    <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'innings';  reverse = !reverse ">Inn</a></td>
-                    <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'overs';  reverse = !reverse ">Overs</a></td>
-                    <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'maidens';  reverse = !reverse ">Mdns</a></td>
-                    <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'runs';  reverse = !reverse ">Runs</a></td>
-                    <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'wickets';  reverse = !reverse ">Wickets</a></td>
-                    <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'most_wickets';   reverse = !reverse ">BBI</a></td>
-                    <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'average';  reverse = !reverse ">Ave</a></td>
-                    <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'econ';  reverse = !reverse ">Econ</a></td>
-                    <td class="one" style="width: 1%;"><a href="" ng-click="sortBy = 'sr';  reverse = !reverse ">SR</a></td>
-                    <td class="one" style="width: 1%;"> <a href="" ng-click="sortBy = 'fivefas';  reverse = !reverse ">5w</a></td>
+                    <td class="one" style="width: 1%;" ><a class="one" href="" ng-click="sortBy = 'player';  reverse = !reverse ">Player</a></td>
+                    <td class="one" style="width: 1%;"><a class="one" href="" ng-click="sortBy = 'matches';  reverse = !reverse ">Mat</a></td>
+                    <td class="one" style="width: 1%;"><a class="one"href="" ng-click="sortBy = 'innings';  reverse = !reverse ">Inn</a></td>
+                    <td class="one" style="width: 1%;"><a class="one"href="" ng-click="sortBy = 'overs';  reverse = !reverse ">Overs</a></td>
+                    <td class="one" style="width: 1%;"><a class="one"href="" ng-click="sortBy = 'maidens';  reverse = !reverse ">Mdns</a></td>
+                    <td class="one" style="width: 1%;"><a class="one"href="" ng-click="sortBy = 'runs';  reverse = !reverse ">Runs</a></td>
+                    <td class="one" style="width: 1%;"><a class="one"href="" ng-click="sortBy = 'wickets';  reverse = !reverse ">Wickets</a></td>
+                    <td class="one" style="width: 1%;"><a class="one"href="" ng-click="sortBy = 'most_wickets';   reverse = !reverse ">BBI</a></td>
+                    <td class="one" style="width: 1%;"><a class="one"href="" ng-click="sortBy = 'average';  reverse = !reverse ">Ave</a></td>
+                    <td class="one" style="width: 1%;"><a class="one"href="" ng-click="sortBy = 'econ';  reverse = !reverse ">Econ</a></td>
+                    <td class="one" style="width: 1%;"><a class="one"href="" ng-click="sortBy = 'sr';  reverse = !reverse ">SR</a></td>
+                    <td class="one" style="width: 1%;"> <a class="one"href="" ng-click="sortBy = 'fivefas';  reverse = !reverse ">5w</a></td>
                 
                     
                     

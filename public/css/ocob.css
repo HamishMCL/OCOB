@@ -129,9 +129,13 @@
            {
              margin:auto;
            }
+           .tablecolor
+           {
+            color: black;
+           }
 
            .one{
-                background-color: #ECECEC;
+               
                 color:green;
            }
            .test

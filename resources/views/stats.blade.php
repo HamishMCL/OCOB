@@ -6,7 +6,7 @@
 @section('nav')
     <nav>
        <div id="area">
-                <h1 style="display:inline-block; padding: 20px; font-weight: 400"><a href="/">Otaki College Old boys 2015-2016</a></h1>
+                <h1 style="display:inline-block; padding: 20px; font-weight: 400"><a href="/">Otaki College Old Boys</a></h1>
             <ul>
             
                 <li> <a href="/batting-stats">Batting Stats</a> </li>
@@ -18,7 +18,7 @@
 @section('content')
 
         <div id="stats">
-            <h1>Otaki College Old boys 2015-2016</h1>
+            <h1>Otaki College Old boys </h1>
               
       
         
