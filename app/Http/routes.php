@@ -11,7 +11,9 @@
 |
 */
 
-
+Route::get('/hmmh',[
+	'uses' => 'adminController@test',
+	]);
 Route::get('/',[
 	'uses' => 'adminController@get_stats',
 	]);
@@ -86,5 +88,10 @@ Route::get('/battinginfo',[
 
 Route::get('/bowlinginfo',[
 	'uses' => 'adminController@getBowlingInfo',
+
+	]);
+
+Route::get('/Players',[
+	'uses' => 'adminController@getPlayers',
 
 	]);

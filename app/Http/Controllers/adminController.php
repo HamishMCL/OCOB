@@ -61,6 +61,14 @@ class adminController extends Controller
        $bowlers = ocob_bowling::all();
        return $bowlers; 
     }
+      public function getPlayers()
+    {
+       $players= ocob_batting::all();
+  
+
+      return $players;
+    }
+    
 
     public function get_stats()
     {
@@ -69,7 +77,7 @@ class adminController extends Controller
         $average = DB::table('ocob_batting')->orderBy('average', 'DESC')->take(5)->get();
         $wickets = DB::table('ocob_Bowling')->orderBy('wickets', 'DESC')->take(5)->get();
         $highestscore = DB::table('ocob_batting')->orderBy('highest_score', 'DESC')->take(6)->get();
-
+ 
         return view('stats',compact('sixes','runs','average','wickets','highestscore'));
     }
 

@@ -22,7 +22,7 @@
 @section('content')
 <script src="/js/table_cross_hair.js"> </script>
  <script src="/js/Sorting.js"></script>
-<div id="stats"  ng-controller="BowlingSorting">
+<div id="stats"  >
  <div style="height: 50px; width:100%;">
         </div>
         <h2 style="text-align:center; display:block;margin-bottom: 20px; margin-top: 20px;">Bowling</h2>
