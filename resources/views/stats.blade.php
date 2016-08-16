@@ -100,7 +100,7 @@
 
                     <tr class="most_sixes  ">
                         <td > <span >1st</span></td>
-                        <td  > <h3 >{{$sixes[1]->player}} </h3></td>
+                        <td  > <h3 >{{$sixes[0]->player}} </h3></td>
                         <td > <h4>{{$sixes[0]->sixs}}</h4><h5>Sixes</h5></td>
                         
                      </tr>
@@ -259,7 +259,7 @@ var app = angular.module('ocob', []);
 app.controller('GetPlayers', function($scope, $http) {
     $http({
         method : "GET",
-        url : "http://localhost:8000/Players"
+        url : "http://ocob.xyz/Players"
     }).then(function mySucces(response) {
         $scope.players = response.data;
     }, function myError(response) {
