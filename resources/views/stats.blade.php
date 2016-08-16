@@ -21,22 +21,31 @@
         
     </nav>
 
-
-
-
-
-        <div id="Content"  >
+        <div id="Content">
 
              <div style="width:100%; height:60px; " >
              </div>
 
             <div id="Left-Side" >
                     <div class="Title-Bar">
-                        <h1 >All Players Stats</h1>
+                        <h1 style="font-size: 40px;font-weight:500;" >All Players Stats</h1>
+                        <h2>2015-2016</h2>
                     </div>
                 
-                <table   style="width:900px">
-                    <h1 style="font-weight: 500; font-size: 40px;">Batting</h1>
+            <div style=" width: 100%;  height: 60px; ">
+
+                <div class="tabs selectedtab" >
+                     <h1>Batting</h1>
+                </div>
+
+                 <div class="tabs unselectedtab" >
+                     <h1>Bowling</h1>
+                </div>
+            
+            </div>
+
+            <table  class="allplayers" style="">
+
                 <tbody >
                   
                     
@@ -73,16 +82,7 @@
                             <td>@{{p.fours}}</td>
                             <td>@{{p.sixs}}</td>
                             </tr>
-
-                
-
-                  
-                      
-                   
-                 
-           
-      
-           
+              
                  </tbody>
              </table>     
 
@@ -90,9 +90,10 @@
 
             <div id="Right-Side">
                  <div class="Title-Bar">
-                        <h1 >Top Performing</h1>
+                        <h1 style="font-size: 40px;font-weight:500;" >Top Performing</h1>
+                        <h2 style="color:">2015-2016</h2>
                     </div>
-              <table cellspacing="0"  style="width: 100%; margin-bottom: 10px;" >
+              <table cellspacing="0" class="quickstats"  >
                 <tbody >
                   
                     <th> <td><h2 style="text-align:center;display:inline;">Top 6 Hitters<h2></td></th>
@@ -125,7 +126,7 @@
 
        
         
-              <table cellspacing="0" style="width: 100%; margin-bottom: 10px;"  >
+              <table cellspacing="0" class="quickstats" >
                 <tbody >
                     <th> <td><span style="text-align:center;display:inline;">Highest Run Scorers</span></td></th>
 
@@ -156,7 +157,7 @@
      
 
 
-              <table cellspacing="0" style="width: 100%; margin-bottom: 10px;"  >
+              <table cellspacing="0" class="quickstats" >
 
 
                 <tbody >
@@ -189,7 +190,7 @@
       
 
  
-              <table cellspacing="0" style="width: 100%; margin-bottom: 10px;"  >
+              <table cellspacing="0" class="quickstats"  >
 
                 <tbody >
                      <th> <td><h2 style="text-align:center;display:inline;">Highest Average</h2></td></th>
@@ -220,7 +221,7 @@
              </table>        
             
            
-              <table cellspacing="0" style="width: 100%; margin-bottom: 10px;"  >
+              <table cellspacing="0" class="quickstats" >
                 <tbody >
 
                      <th> <td><h2 style="text-align:center;display:inline;">Highest Score </h2></td></th>
